@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Funcionário</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.1);
+    }
+    input, button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    input {
+      background: #333;
+      color: #fff;
+    }
+    button {
+      background: #00c9ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="/api/funcionarios" method="POST" enctype="multipart/form-data">
+    <h2>📋 Cadastro de Funcionário</h2>
+    <input type="text" name="nome" placeholder="Nome completo" required />
+    <input type="text" name="cargo" placeholder="Cargo" required />
+    <input type="file" name="foto" accept="image/*" required />
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>
