@@ -2,51 +2,58 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cadastro de Funcionário</title>
-  <style>
-    body {
-      background: #0f0f0f;
-      font-family: 'Segoe UI', sans-serif;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    form {
-      background: #1e1e1e;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,255,255,0.1);
-    }
-    input, button {
-      width: 100%;
-      margin-top: 10px;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-    }
-    input {
-      background: #333;
-      color: #fff;
-    }
-    button {
-      background: #00c9ff;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zyxel Cloud Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body>
-  <form action="/api/funcionarios" method="POST" enctype="multipart/form-data">
-    <h2>📋 Cadastro de Funcionário</h2>
-    <input type="text" name="nome" placeholder="Nome completo" required />
-    <input type="text" name="cargo" placeholder="Cargo" required />
-    <input type="file" name="foto" accept="image/*" required />
-    <button type="submit">Cadastrar</button>
-  </form>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="bg-gray-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="https://www.edivaldobrito.com.br/wp-content/uploads/2022/03/zyxel-corrigiu-um-bug-critico-que-afeta-seus-dispositivos-de-firewall-e-vpn-1.webp" alt="Logo Zyxel" class="h-10 w-10 rounded-full">
+        <h1 class="text-2xl font-bold tracking-wide">Zyxel Cloud Solutions</h1>
+      </div>
+      <nav class="space-x-6 text-sm md:text-base">
+        <a href="index.html" class="hover:text-blue-400">Início</a>
+        <a href="cadastro.html" class="hover:text-blue-400">Cadastro</a>
+        <a href="listagem.html" class="hover:text-blue-400">Funcionários</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="px-6 md:px-12 py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Inovando o futuro da computação em nuvem</h2>
+    <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-8">
+      A Zyxel Cloud Solutions é uma empresa de tecnologia focada em soluções modernas para infraestrutura de nuvem, segurança digital, e conectividade inteligente para empresas de todos os portes.
+    </p>
+    <a href="cadastro.html" class="inline-block bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-full font-semibold">
+      Cadastrar Funcionário
+    </a>
+  </section>
+
+  <section class="py-16 px-6 md:px-12 bg-gray-800">
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto text-center">
+      <div class="p-6 bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <i class="fas fa-cloud fa-3x mb-4 text-blue-400"></i>
+        <h3 class="text-xl font-semibold mb-2">Infraestrutura em Nuvem</h3>
+        <p class="text-gray-300">Servidores de alta performance, escaláveis e seguros para sua empresa crescer com tranquilidade.</p>
+      </div>
+      <div class="p-6 bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <i class="fas fa-lock fa-3x mb-4 text-blue-400"></i>
+        <h3 class="text-xl font-semibold mb-2">Segurança Digital</h3>
+        <p class="text-gray-300">Proteção completa de dados com criptografia avançada e monitoramento 24/7.</p>
+      </div>
+      <div class="p-6 bg-gray-700 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <i class="fas fa-network-wired fa-3x mb-4 text-blue-400"></i>
+        <h3 class="text-xl font-semibold mb-2">Conectividade Inteligente</h3>
+        <p class="text-gray-300">Soluções de rede corporativa com performance, automação e confiabilidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
+    © 2025 Zyxel Cloud Solutions. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
